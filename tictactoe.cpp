@@ -117,6 +117,7 @@ int main()
     cout << "Player 1 (X)  -  Player 2 (O)" << endl;
     display();
 
+    //switch between players
     for (int n = 0; n < 5; n++)
     {
         for (int i = 1; i < 3; i++)
@@ -125,6 +126,7 @@ int main()
             cin >> number;
             for (int q = 0; q < 9; q++)
             {
+                //check if correct input
                 if (number != digit[q] && q == 8)
                 {
                     cout << "Invalid value" << endl;
